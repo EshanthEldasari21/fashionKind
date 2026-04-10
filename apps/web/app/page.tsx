@@ -1,9 +1,6 @@
-import { Button } from "@workspace/ui/components/button"
+
+import { redirect } from "next/dist/client/components/navigation"
 
 export default function Page() {
-  return (
-    <div className="flex min-h-svh p-6">
-      
-    </div>
-  )
+redirect("/fulfillment-logistics")
 }

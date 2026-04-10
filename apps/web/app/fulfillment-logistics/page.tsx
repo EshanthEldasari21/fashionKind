@@ -80,7 +80,7 @@ const Page = () => {
       </div>
 
       <div className="flex gap-5 my-5">
-        <Card style={{ padding: "10px 15px", width: "250px" }}>
+        <Card style={{ padding: "10px 15px", width: "250px", borderColor: "#FFC778", borderWidth: "1px" }}>
           <h2 className="text-lg font-bold" >3</h2>
           <p className="subtitle flex flex-col ">
             <span style={{fontWeight: "600"}}>{t("activeShipments")}</span>
@@ -88,7 +88,7 @@ const Page = () => {
           </p>
         </Card>
 
-        <Card style={{ padding: "10px 15px", width: "250px" }}>
+        <Card style={{ padding: "10px 15px", width: "250px", borderColor: "#FFC778", borderWidth: "1px" }}>
           <h2 className="text-lg font-bold">428</h2>
           <p className="subtitle flex flex-col gap-1">
             <span style={{fontWeight: "600"}}>{t("warehouseUnits")}</span>
@@ -96,7 +96,7 @@ const Page = () => {
           </p>
         </Card>
 
-        <Card style={{ padding: "10px 15px", width: "250px" }}>
+        <Card style={{ padding: "10px 15px", width: "250px", borderColor: "#FFC778", borderWidth: "1px" }}>
           <h2 className="text-lg font-bold">29</h2>
           <p className="subtitle flex flex-col gap-1">
             <span style={{fontWeight: "600"}}>{t("ordersToFulfill")}</span>
@@ -104,7 +104,7 @@ const Page = () => {
           </p>
         </Card>
 
-        <Card style={{ padding: "10px 15px", width: "250px" }}>
+        <Card style={{ padding: "10px 15px", width: "250px", borderColor: "#FFC778", borderWidth: "1px" }}>
           <h2 className="text-lg font-bold">$3,655</h2>
           <p className="subtitle flex flex-col gap-1">
             <span style={{fontWeight: "600"}}>{t("totalSavings")}</span>
@@ -114,7 +114,7 @@ const Page = () => {
       </div>
 
       <Tabs defaultValue="overview">
-        <TabsList variant="line">
+        <TabsList variant="line"  >
           <TabsTrigger value="overview">{t("overview")}</TabsTrigger>
           <TabsTrigger value="analytics">{t("analytics")}</TabsTrigger>
           <TabsTrigger value="reports">{t("reports")}</TabsTrigger>
@@ -132,7 +132,7 @@ const Page = () => {
           }}
         >
           <Table>
-            <TableHeader style={{ backgroundColor: "#EBE9E8" }}>
+            <TableHeader style={{ backgroundColor: "#EDE1CE" }}>
               <TableRow>
                 <TableHead>{t("shipment")}</TableHead>
                 <TableHead>{t("route")}</TableHead>

@@ -10,7 +10,7 @@ const resources = {
       title: "Fulfillment & Logistics",
       subtitle:
         "End-to-end: freight - customs - warehouse - pick/pack/ship",
-      newAssignment: "+ New Assignment",
+      newShipment: "+ New Shipment",
       activeShipments: "Active Shipments",
       clickToView: "click to view shipments",
       warehouseUnits: "Warehouse Units",

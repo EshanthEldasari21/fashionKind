@@ -62,7 +62,7 @@ const Page = () => {
   ]
 
   return (
-    <div className="p-6">
+    <div className="p-6" style={{ maxWidth: "1200px", margin: "0 auto",  }}>
       <div className="flex items-center justify-between">
         <div>
           <h1 className="fulfillment-logistics text-2xl font-bold">
@@ -72,10 +72,10 @@ const Page = () => {
         </div>
 
         <button
-          className="rounded-md bg-black px-4 py-2 text-white"
-          style={{ fontSize: "13px" }}
+          className="rounded-md  px-4 py-2 text-white"
+          style={{ fontSize: "13px", backgroundColor: "#A87329" }}
         >
-          {t("newAssignment")}
+          {t("newShipment")}
         </button>
       </div>
 
@@ -127,12 +127,12 @@ const Page = () => {
           style={{
             border: "1px solid #DEDEDE",
             borderRadius: "4px",
-            padding: "10px",
+            
             marginTop: "10px",
           }}
         >
           <Table>
-            <TableHeader>
+            <TableHeader style={{ backgroundColor: "#EBE9E8" }}>
               <TableRow>
                 <TableHead>{t("shipment")}</TableHead>
                 <TableHead>{t("route")}</TableHead>

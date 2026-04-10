@@ -79,11 +79,11 @@ const AppSidebar = () => {
   ]
 
   return (
-    <Sidebar>
+    <Sidebar style={{backgroundColor: "#EDE9E3"}}>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel className="pt-6">
-            <h2 className="text-lg font-bold">Fashion Kind</h2>
+            <h2 className="text-lg font-bold" style={{color: "#1C1C1C"}}>NewCo</h2>
           </SidebarGroupLabel>
 
           <SidebarMenu className="pt-6">
@@ -97,16 +97,17 @@ const AppSidebar = () => {
               return (
                 <SidebarMenuItem key={item.title}>
                   <Link href={item.href}>
-                    <SidebarMenuButton
-                      className={`w-full ${
-                        isActive
-                          ? "bg-gray-200 text-gray-900"
-                          : "hover:bg-muted"
-                      }`}
-                    >
-                      <item.icon className="h-4 w-4" />
-                      <span>{item.title}</span>
-                    </SidebarMenuButton>
+                   <SidebarMenuButton
+  className={`w-full ${
+    isActive
+      ? "bg-[#EDE9E3] text-[#BE832B]"
+      : "text-muted-foreground hover:bg-gray-100"
+  } flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors
+  }`}
+>
+  <item.icon className="h-4 w-4" />
+  <span>{item.title}</span>
+</SidebarMenuButton>
                   </Link>
                 </SidebarMenuItem>
               )
